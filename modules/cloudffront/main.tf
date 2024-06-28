@@ -74,7 +74,7 @@ resource "aws_cloudfront_distribution" "cloudfront" {
   viewer_certificate {
     acm_certificate_arn = var.certificate_arn
     ssl_support_method = "sni-only"
-    minimum_protocol_version = "TLSv.2_3821"
+    minimum_protocol_version = "TLSv.2_2021"
   }
 
 aliases = [ var.domain_name ]
