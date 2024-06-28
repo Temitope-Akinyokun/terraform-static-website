@@ -12,3 +12,7 @@ variable "certificate_arn" {
   description = "arn for acm certifiate"
   type = string
 }
+
+variable "domain_name" {
+  default = "temitope.i.ng"
+}

@@ -77,5 +77,5 @@ resource "aws_cloudfront_distribution" "cloudfront" {
     minimum_protocol_version = "TLSv.2_3821"
   }
 
-aliases = [ "temitope.i.ng" ]
+aliases = [ var.domain_name ]
 }
